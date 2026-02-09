@@ -6,3 +6,8 @@ tavily-python
 python-dotenv
 grandalf
 langchain-anthropic
+bedrock-agentcore
+bedrock-agentcore-starter-toolkit
+requests
+bedrock-agentcore
+langgraph-checkpoint-aws

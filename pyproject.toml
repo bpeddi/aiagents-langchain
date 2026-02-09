@@ -1,7 +1,53 @@
 [project]
-name = "agents"
+name = "ai-agents-langchain"
 version = "0.1.0"
-description = "Add your description here"
+description = "AI Agents with LangChain & LangGraph - ReAct and stateful agents with web search and weather tools"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+license = "MIT"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+keywords = ["langchain", "langgraph", "agents", "ai", "claude"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "langgraph",
+    "langchain",
+    "langchain-openai",
+    "langchain-community",
+    "tavily-python",
+    "python-dotenv",
+    "grandalf",
+    "langchain-anthropic",
+    "requests","bedrock-agentcore", "strands-agents", "bedrock-agentcore-starter-toolkit", 
+    "langgraph-checkpoint-aws"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=22.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0",
+]
+jupyter = [
+    "jupyter>=1.0",
+    "ipykernel>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/bpeddi/aiagents-langchain"
+Repository = "https://github.com/bpeddi/aiagents-langchain.git"
+Issues = "https://github.com/bpeddi/aiagents-langchain/issues"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
